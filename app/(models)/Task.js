@@ -4,8 +4,11 @@ import mongoose, { Schema } from "mongoose";
 mongoose.connect(process.env.MONGO_URI, {
   serverSelectionTimeoutMS: 30000, // 30 seconds
   socketTimeoutMS: 45000, // 45 seconds
-  keepAlive: true,
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
 });
+
+
 mongoose.Promise = global.Promise;
 
 const taskSchema = new Schema(

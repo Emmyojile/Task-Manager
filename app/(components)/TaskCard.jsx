@@ -1,12 +1,14 @@
 import React from "react";
 import DeleteTask from "./DeleteTask";
 import StatusDisplay from "./StatusDisplay";
+import EditTask from "./EditTask";
 
 const TaskCard = () => {
   return (
     <div className="flex flex-col bg-card rounded-md shadow-lg p-3 m-2">
       <div className="flex mb-3">
-        <div className="ml-auto">
+        <div className="ml-auto  flex gap-3">
+          <EditTask/>
           <DeleteTask />
         </div>
       </div>
