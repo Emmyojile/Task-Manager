@@ -68,7 +68,7 @@ const TaskForm = ({ task }) => {
         method="POST"
         onSubmit={handleSubmit}
       >
-        <h3>{EDITMODE ? "Update your Task" : "Create a Task"}</h3>
+        <h3>{EDITMODE ? "Update your Task" : "Add a Task"}</h3>
         <label>Title</label>
         <input
           id="title"
@@ -87,7 +87,7 @@ const TaskForm = ({ task }) => {
           value={formData.description}
           rows={"4"}
         />
-        <input type="submit" className="btn text-white" value={EDITMODE ? "Update your Task" : "Create a Task"}/>
+        <input type="submit" className="btn text-white" value={EDITMODE ? "Update your Task" : "Add a Task"}/>
       </form>
     </div>
   );
