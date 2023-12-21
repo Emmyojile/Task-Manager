@@ -19,10 +19,10 @@ const Nav = async () => {
       <div className="flex gap-4 items-center pr-8">
         <p className="nav-links">John Doe</p>
 
-        <Link className="nav-links" href="/api/auth/signout?callbackUrl=/">
-          Logout
+        <Link className="nav-links" href="/Register">
+          Register
         </Link>
-        <Link className="nav-links" href="/api/auth/signin">
+        <Link className="nav-links" href="/api/Login">
           Login
         </Link>
         
