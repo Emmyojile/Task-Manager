@@ -4,8 +4,8 @@ import mongoose, { Schema } from "mongoose";
 mongoose.connect(process.env.MONGO_URI, {
   serverSelectionTimeoutMS: 30000, // 30 seconds
   socketTimeoutMS: 45000, // 45 seconds
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
+  // useNewUrlParser: true,
+  // useUnifiedTopology: true,
 });
 
 
