@@ -17,3 +17,33 @@ export async function POST(req) {
     );
   }
 }
+
+// export async function GET(req) {
+//   console.log("All Tasks route!!");
+//   try {
+//     const { status } = req.query;
+//     const tasks = await Task.find({ status }); // Filter based on status
+
+//     return NextResponse.json({ tasks }, { status: 200 })
+//   } catch (error) {
+//     console.error("Error getting Tasks:", error);
+//     return NextResponse.json(
+//       { message: "Error getting Tasks", error: error.message },
+//       { status: 500 }
+//     );
+//   }
+// }
+export async function GET(req) {
+  console.log("All Tasks route!!");
+  try {
+    const tasks = await Task.find();
+
+    return NextResponse.json({ tasks }, { status: 200 });
+  } catch (error) {
+    console.error("Error getting Tasks:", error);
+    return NextResponse.json(
+      { message: "Error getting Tasks", error: error.message },
+      { status: 500 }
+    );
+  }
+}
