@@ -13,7 +13,7 @@ export default function Login() {
 
   useEffect(() => {
     if(session?.status === "authenticated") {
-      router.replace("/dash")
+      router.replace("/")
     }
   },[session, router]);
   useEffect(() => {
@@ -49,7 +49,7 @@ export default function Login() {
 
     if (res?.error) {
       setError("Invalid email or password");
-      if (res?.url) router.push("/dash");
+      if (res?.url) router.push("/");
     } else {
       setError("");
     }
