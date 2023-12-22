@@ -22,7 +22,7 @@ const Nav = async () => {
         <Link className="nav-links" href="/Register">
           Register
         </Link>
-        <Link className="nav-links" href="/api/Login">
+        <Link className="nav-links" href="/Login">
           Login
         </Link>
         
